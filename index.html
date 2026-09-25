@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- 네이버 SEO: 회사명 + 핵심 키워드 -->
-  <title>LX 창호 하우시스 태흥산업 | 부산·경남·경북·울산 창호 전문 제조 · LX 창호 하우시스 공식 대리점</title>
-  <meta name="description" content="부산·경남·경북·울산 지역 창호 제조 전문업체 LX 창호 하우시스 태흥산업입니다. LX 창호 하우시스 공식 대리점(본사인증)으로, 공장에서 직접 제작한 단열·방음 창호를 납품합니다.">
+  <title>LX하우시스 창호 태흥산업 | 부산·경남·경북·울산 창호 전문 제조 · LX하우시스 창호 공식 대리점</title>
+  <meta name="description" content="부산·경남·경북·울산 지역 창호 제조 전문업체 LX하우시스 창호 태흥산업입니다. LX하우시스 창호 공식 대리점(본사인증)으로, 공장에서 직접 제작한 단열·방음 창호를 납품합니다.">
 
   <!-- Open Graph (네이버·카카오 공유 시 표시) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="LX 창호 하우시스 태흥산업 | 부산·경남·경북·울산 창호 전문 제조">
-  <meta property="og:description" content="LX 창호 하우시스 공식 대리점(본사인증). 부산·경남·경북·울산 지역에 공장 직접 제작 창호를 납품합니다.">
+  <meta property="og:title" content="LX하우시스 창호 태흥산업 | 부산·경남·경북·울산 창호 전문 제조">
+  <meta property="og:description" content="LX하우시스 창호 공식 대리점(본사인증). 부산·경남·경북·울산 지역에 공장 직접 제작 창호를 납품합니다.">
   <meta property="og:url" content="https://lxhausys-taeheung.github.io">
   <meta property="og:image" content="https://lxhausys-taeheung.github.io/images/hero.jpg">
 
@@ -71,11 +71,9 @@
       transition: color 0.3s, text-shadow 0.3s;
       text-shadow: 0 1px 10px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.5);
     }
-    nav.scrolled .logo { color: #5b4f47; text-shadow: none; }
+    nav.scrolled .logo { color: var(--ink); text-shadow: none; }
     .logo span { color: #e4b877; font-weight: 800; }
     nav.scrolled .logo span { color: var(--gold); }
-    .logo .lx-mark { color: #c8503a; }
-    nav.scrolled .logo .lx-mark { color: #b8402c; }
     .nav-links { display: flex; gap: 32px; list-style: none; }
     .nav-links a {
       text-decoration: none; color: rgba(255,255,255,0.85);
@@ -164,18 +162,19 @@
       max-width: 720px;
       text-shadow: 0 2px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4);
     }
+    .hero h1 .h1-brand { white-space: nowrap; }
     .hero h1 .h1-accent {
-      color: #ffffff;
+      color: #f2b25c;
       text-shadow: 0 2px 16px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.7);
     }
-    .hero h1 .h1-accent .lx-mark { color: #e2694f; }
     .hero h1 .h1-sub {
-      color: #f0c384;
-      font-weight: 800;
-      font-size: 0.78em;
+      color: #fdfdfd;
+      font-weight: 700;
+      font-size: 0.65em;
       letter-spacing: 0.01em;
       text-shadow: 0 2px 14px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.75);
     }
+    @media (max-width: 480px) { .hero h1 .h1-brand { white-space: normal; } }
     .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
@@ -539,7 +538,7 @@
   <!-- 네비게이션 -->
   <nav id="nav">
     <div class="nav-inner">
-      <a href="#" class="logo"><span class="lx-mark">LX</span> 창호 하우시스 공식대리점 <span>태흥산업</span></a>
+      <a href="#" class="logo">LX하우시스 창호 공식대리점 <span>태흥산업</span></a>
       <ul class="nav-links">
         <li><a href="#products">제품</a></li>
         <li><a href="#before-after">교체 전후</a></li>
@@ -552,18 +551,18 @@
   <!-- 히어로: 전체 화면 배경 배너 (사진 슬라이드) -->
   <section class="hero" id="hero">
     <div class="hero-slide active">
-      <img src="images/hero.jpg" alt="LX 창호 하우시스 태흥산업 대표 제품 사진 1" onerror="this.parentElement.style.display='none'">
+      <img src="images/hero.jpg" alt="LX하우시스 창호 태흥산업 대표 제품 사진 1" onerror="this.parentElement.style.display='none'">
     </div>
     <div class="hero-slide">
-      <img src="images/hero2.jpg" alt="LX 창호 하우시스 태흥산업 대표 제품 사진 2" onerror="this.parentElement.style.display='none'">
+      <img src="images/hero2.jpg" alt="LX하우시스 창호 태흥산업 대표 제품 사진 2" onerror="this.parentElement.style.display='none'">
     </div>
 
     <button class="hero-arrow prev" aria-label="이전 사진" onclick="heroSlide(-1)">‹</button>
     <button class="hero-arrow next" aria-label="다음 사진" onclick="heroSlide(1)">›</button>
 
     <div class="hero-content">
-      <div class="hero-badge">since 2014 · LX 창호 하우시스 공식 대리점 (본사인증)</div>
-      <h1>공장에서 직접 만들어<br>믿을 수 있는 <span class="h1-accent"><span class="lx-mark">LX</span> 창호 하우시스</span> <span class="h1-sub">(태흥산업)</span></h1>
+      <div class="hero-badge">since 2014 · LX하우시스 창호 공식 대리점 (본사인증)</div>
+      <h1>공장에서 직접 만들어<br>믿을 수 있는 <span class="h1-brand"><span class="h1-accent">LX하우시스 창호</span> <span class="h1-sub">(태흥산업)</span></span></h1>
       <div class="hero-cta">
         <a href="tel:055-346-7832" class="btn btn-primary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -585,7 +584,7 @@
   <div class="trust-strip">
     <div class="trust-inner">
       <div><strong>2014년~</strong><span>업력</span></div>
-      <div><strong>LX 창호 하우시스</strong><span>공식 대리점 (본사인증)</span></div>
+      <div><strong>LX하우시스 창호</strong><span>공식 대리점 (본사인증)</span></div>
       <div><strong>부산·경남·경북·울산</strong><span>납품 지역</span></div>
       <div><strong>직접 제작</strong><span>자체 공장 생산</span></div>
       <div><strong>정품 자재</strong><span>100% 정품만 사용</span></div>
@@ -765,7 +764,7 @@
 
   <!-- 푸터 -->
   <footer>
-    <p>© 2026 LX 창호 하우시스 태흥산업</p>
+    <p>© 2026 LX하우시스 창호 태흥산업</p>
   </footer>
 
   <script>

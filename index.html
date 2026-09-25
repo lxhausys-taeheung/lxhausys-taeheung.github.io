@@ -236,6 +236,10 @@
       color: var(--grey);
       font-size: 0.95rem;
     }
+    .section-sub .hl {
+      color: var(--gold);
+      font-weight: 700;
+    }
 
     /* 가운데 정렬 (연락처 등 소수 섹션) */
     .section-head.centered {
@@ -441,6 +445,7 @@
     }
     .trust-inner div:first-child { border-left: none; }
     .trust-inner div strong { font-size: 1.2rem; font-weight: 800; color: var(--white); }
+    .trust-emph { color: var(--gold) !important; }
     .trust-inner div span { font-size: 0.95rem; color: rgba(255,255,255,0.65); }
     @media (max-width: 700px) {
       .trust-inner div { border-left: none; padding: 6px 16px; font-size: 0.95rem; }
@@ -587,7 +592,7 @@
       <div><strong>LX하우시스 창호</strong><span>공식 대리점 (본사인증)</span></div>
       <div><strong>부산·경남·경북·울산</strong><span>납품 지역</span></div>
       <div><strong>직접 제작</strong><span>자체 공장 생산</span></div>
-      <div><strong>정품 자재</strong><span>100% 정품만 사용</span></div>
+      <div><strong class="trust-emph">정품 자재</strong><span>100% 정품만 사용</span></div>
       <div><strong>2,000세대+</strong><span>누적 창호 교체</span></div>
     </div>
   </div>
@@ -600,7 +605,7 @@
         <div class="section-head-text">
           <div class="eyebrow">Product</div>
           <h2 class="section-title">우리가 만드는 창</h2>
-          <p class="section-sub">공장에서 정품 자재로 직접 제작해 납품하는 창호입니다.</p>
+          <p class="section-sub">공장에서 <span class="hl">100% 정품 자재</span>로 직접 제작해 납품하는 창호입니다.</p>
         </div>
       </div>
       <div class="product-grid product-grid-two">
@@ -687,7 +692,7 @@
         <div class="section-head-text">
           <div class="eyebrow">Factory</div>
           <h2 class="section-title">공장 · 자재</h2>
-          <p class="section-sub">정품 자재만 사용해 직접 제작하는 생산 현장입니다.</p>
+          <p class="section-sub"><span class="hl">100% 정품 자재</span>만 사용해 직접 제작하는 생산 현장입니다.</p>
         </div>
       </div>
       <div class="factory-grid factory-grid-2">

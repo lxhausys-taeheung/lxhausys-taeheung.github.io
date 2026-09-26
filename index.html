@@ -159,11 +159,12 @@
       letter-spacing: -0.02em;
       line-height: 1.4;
       margin-bottom: 32px;
-      max-width: 720px;
+      max-width: 820px;
       word-break: keep-all;
       text-shadow: 0 2px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4);
     }
     .hero h1 .h1-brand { white-space: nowrap; }
+    .hero h1 .h1-line1 { white-space: nowrap; }
     .hero h1 .h1-accent {
       color: #f2b25c;
       text-shadow: 0 2px 16px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.7);
@@ -176,6 +177,7 @@
       text-shadow: 0 2px 14px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.75);
     }
     @media (max-width: 480px) { .hero h1 .h1-brand { white-space: normal; } }
+    @media (max-width: 760px) { .hero h1 .h1-line1 { white-space: normal; } }
     .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
@@ -586,7 +588,7 @@
 
     <div class="hero-content">
       <div class="hero-badge">since 2014 · LX하우시스 창호 공식 대리점 (본사인증)</div>
-      <h1>LX 본사 완성창부터 공장 직접 제작까지<br>믿을 수 있는 <span class="h1-brand"><span class="h1-accent">LX하우시스 창호</span> <span class="h1-sub">(태흥산업)</span></span></h1>
+      <h1><span class="h1-line1">LX 본사 완성창부터 공장 직접 제작까지</span><br>믿을 수 있는 <span class="h1-brand"><span class="h1-accent">LX하우시스 창호</span> <span class="h1-sub">(태흥산업)</span></span></h1>
       <div class="hero-cta">
         <a href="tel:055-346-7832" class="btn btn-primary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -660,7 +662,7 @@
               <span class="ba-tag">BEFORE</span>
             </div>
             <div class="ba-half">
-              <img src="images/after-1.png alt="교체 후" onerror="this.parentElement.classList.add('img-fallback')">
+              <img src="images/after-1.png" alt="교체 후" onerror="this.parentElement.classList.add('img-fallback')">
               <span class="ba-tag ba-tag-after">AFTER</span>
             </div>
           </div>
